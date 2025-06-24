@@ -1,71 +1,82 @@
+/* styles.css */
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #282c34;
-    color: white;
+    margin: 0;
+    padding: 0;
+    background-color: #0d1117;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
 }
 
 .gamer-card {
-    background-color: #444;
-    border-radius: 15px;
-    padding: 20px;
-    width: 300px;
+    background-color: #161b22;
+    color: #c9d1d9;
+    border-radius: 16px;
+    padding: 24px;
+    width: 320px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
     text-align: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.gamer-card:hover {
+    transform: scale(1.02);
 }
 
 .profile-pic {
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #30363d;
+    margin-bottom: 16px;
 }
 
 .gamer-name {
-    font-size: 24px;
-    margin: 10px 0;
+    font-size: 1.8em;
+    font-weight: 700;
+    margin: 8px 0 4px;
 }
 
 .gamer-tag {
-    color: #ccc;
-    margin-bottom: 20px;
+    font-size: 1em;
+    color: #8b949e;
+    margin-bottom: 24px;
 }
 
 .gamer-stats {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
-}
-.stat {
-    flex: 1;
-    background-color: #555;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 0 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 24px;
 }
 
 .stat h2 {
-    font-size: 16px;
+    font-size: 1em;
     margin: 0;
+    color: #58a6ff;
 }
 
 .stat p {
-    font-size: 20px;
-    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 4px 0 0;
 }
+
 .follow-button {
-    background-color: #007bff;
+    background-color: #238636;
     color: white;
     border: none;
-    border-radius: 5px;
     padding: 10px 20px;
+    border-radius: 8px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
 }
 
 .follow-button:hover {
-    background-color: #0056b3;
+    background-color: #2ea043;
 }
