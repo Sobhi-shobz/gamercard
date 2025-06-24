@@ -1,123 +1,71 @@
 body {
+    font-family: Arial, sans-serif;
+    background-color: #282c34;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background-color: #1a1a2e;
-    font-family: 'Poppins', sans-serif;
-    color: #e0e0e0;
+    height: 100vh;
+    margin: 0;
 }
 
 .gamer-card {
-    
-    width: 350px;
-    max-width: 90%;
-    
-    background: #16213e;
-    border-radius: 15px; 
-    overflow: hidden; 
-    
-   
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    
-    
-    position: relative; 
-}
-
-
-.card-header {
-    height: 120px;
-    background-image: url('https://images.unsplash.com/photo-1579546929518-9e396f3cc809?q=80&w=1000&auto=format&fit=crop');
-    background-size: cover;
-    background-position: center;
-}
-
-
-.avatar-container {
-    text-align: center;
-    
-    margin-top: -75px; 
-    position: relative; 
-    z-index: 10;
-}
-
-.profile-avatar {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%; 
-    
-    
-    border: 5px solid #0f3460;
-    
-    
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-
-.card-body {
-    
+    background-color: #444;
+    border-radius: 15px;
     padding: 20px;
+    width: 300px;
     text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
-.username {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 2rem;
-    color: #e94560;
-    margin: 10px 0 5px; 
-    letter-spacing: 2px;
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
 
-.user-title {
-    font-size: 1rem;
-    color: #c0c0c0;
-    margin-top: 0;
+.gamer-name {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.gamer-tag {
+    color: #ccc;
     margin-bottom: 20px;
 }
 
-
-.stats ul {
-    list-style: none;
-    padding: 0;
+.gamer-stats {
+    display: flex;
+    justify-content: space-between;
     margin: 20px 0;
-    display: flex; 
-    justify-content: space-around;
+}
+.stat {
+    flex: 1;
+    background-color: #555;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 5px;
 }
 
-.stats li {
-    text-align: center;
+.stat h2 {
+    font-size: 16px;
+    margin: 0;
 }
 
-.stat-value {
-    
-    display: block; 
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #ffffff;
+.stat p {
+    font-size: 20px;
+    margin: 0;
+}
+.follow-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-.stat-label {
-    display: block;
-    font-size: 0.8rem;
-    color: #c0c0c0;
-    text-transform: uppercase;
-}
-
-
-.card-footer {
-    background-color: #0f3460;
-    padding: 15px;
-    text-align: center;
-}
-
-.card-footer a {
-    color: #e0e0e0;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-.card-footer a:hover {
-    color: #e94560;
+.follow-button:hover {
+    background-color: #0056b3;
 }
